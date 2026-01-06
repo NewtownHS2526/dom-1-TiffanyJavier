@@ -28,14 +28,31 @@
 console.log("script running");
 
 // TODO: Fix this bug - should select #apple, not #banana!
-const appleButton = document.querySelector("#banana");
-
+const appleButton = document.querySelector("#apple");
 console.log(appleButton);
 
-// TODO: Rename this function to something more generic like "addItem"
 const addApple = () => {
+  shoppingCart.innerHTML += `<P> Apple </p>`;
+  totalinCent += .75;
+  updateTotal();
+}
+
+const addBanana = () => {
+  shoppingCart.innerHTML += `<p> Bannana </p>`;
+  totalinCent += .30;
+  updateTotal();
+}
+
+const addMango = () => {
+  shoppingcart.innerHTML += `<p> Mango </p>`
+  totalinCent += 1.25;
+  updateTotal();
+}
+
+// TODO: Rename this function to something more generic like "addItem"
+const updateTotal = () => {
   alert("apple button under construction");
 };
 
 // TODO: Add event listeners for all three buttons
-appleButton.addEventListener("click", addApple);
+appleButton.addEventListener("click", updateTotal);
