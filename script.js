@@ -55,4 +55,6 @@ const updateTotal = () => {
 };
 
 // TODO: Add event listeners for all three buttons
-appleButton.addEventListener("click", updateTotal);
+appleButton.addEventListener("click", addApple);
+bannanaButton.addEventListener("click", addBanana);
+mangoButton.addEventListener("click", addMango);
